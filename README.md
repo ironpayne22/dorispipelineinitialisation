@@ -127,7 +127,7 @@ else
     kubectl apply -f "deploy/1-pipelineinitialisation/70-pipelineinitialisationserviceaccount.yml"
     kubectl apply -f "deploy/1-pipelineinitialisation/100-pipelineinitialisationclusterrole.yml"
     kubectl apply -f "deploy/1-pipelineinitialisation/110-pipelineinitialisationclusterrolebinding.yml"
-    kubectl apply -f "deploy/1-pipelineinitialisation/170-pipelineinitialisationdeployment.yml"
+    cat "deploy/1-pipelineinitialisation/170-pipelineinitialisationdeployment.yml" | sed "s#image_url_var#${image_url_var}#g" | kubectl apply -f -
 fi
 
 echo "kubectl apply completed."
