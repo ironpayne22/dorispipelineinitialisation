@@ -214,7 +214,7 @@ def container_versions():
             id = entry['id']
             if str(custom_container_prefix+'-') in str(name):
                 print(f'Custom prefix found in {name}')
-                package_name = str(name)[len("solar-"):]
+                package_name = str(name)[len(str(custom_container_prefix+"-")):]
             # Create a numpy array with the values for the current entry
                 package_name = np.array([package_name])
                 package_id = np.array([id])
