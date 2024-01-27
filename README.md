@@ -161,12 +161,12 @@ The sub-folders contains all the yaml files. In each of these yaml files there m
 40-PersistentVolumeClaim (PVC): Requests a specific amount of storage from a PersistentVolume  
 50-StorageClass: Defines classes for dynamic provisioning of storage  
 60-Secret: Stores sensitive data such as passwords and keys  
-70-ServiceAccount: Defines an identity that pods can use to access cluster resources 
-80-Role: Defines access controls at the namespace level 
-90-RoleBinding:  Links a role to a service account at the namespace level
-100-ClusterRole: Defines access controls at the cluster level 
-110-ClusterRoleBinding: Links a role to a service account at the cluster level 
-120-ConfigMap: Stores configuration data as key-value pairs  
+70-ServiceAccount: Defines an identity that pods can use to access cluster resources   
+80-Role: Defines access controls at the namespace level   
+90-RoleBinding:  Links a role to a service account at the namespace level  
+100-ClusterRole: Defines access controls at the cluster level   
+110-ClusterRoleBinding: Links a role to a service account at the cluster level   
+120-ConfigMap: Stores configuration data as key-value pairs    
 130-Job: Creates Job
 140-CronJob: Creates Jobs on a schedule  
 150-Pod: A single instance of a running process in a cluster  
