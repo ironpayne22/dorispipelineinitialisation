@@ -176,6 +176,7 @@ The sub-folders contains all the yaml files. In each of these yaml files there m
 190-DaemonSet: Ensures that all Nodes run a copy of a Pod  
 200-Service: Exposes a set of Pods as a network service  
 210-Ingress: Manages external access to services, typically HTTP
+220-Endpoint: Endpoint of a service
 
 The lower numbered components are pre-requisites before the higher number components are deployed. The reason I have left a gap of 10 between each kind is to allow room for multiples of the same kind, plus allowing for retrospective additions. If required, this gap could be changed to 100, 200 or 1000 without any further changes needed elsewhere. This is only meant as an advisory guideline.
 
